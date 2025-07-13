@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jorge Atlas Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Jorge ATlas</div>
+    <nav>
+      <a id="navHome" href="#">Início</a>
+      <a href="#">Sobre mim</a>
+      <a href="#">Trabalhos</a>
+      <a href="#">Contato</a>
+    </nav>
+    <a class="ancora-btn" href="https://wa.me/244933621858" target="_blank">
+      Contact
+    </a>
+  </header>
+
+
+  <section id="sobre" class="sobre hero">
+    <h2 class="tituloQuemSeraMentora">Quem sou eu?</h2>
+    <img src="pascoalSilva_foto.png" alt="" id="imgPerfilMentora">
+    <p class="txtDescritivoMentora">Olá! Eu sou Pascoal Da Silva, mais conhecido como Jorge Atlas. <br>Designer gráfico e desenvolvedor fullstack com mais de 2 anos de atuação estratégica no mercado digital. <br>Já impactei mais de 300 projetos entregues com excelência, criando identidades visuais memoráveis e sites que realmente convertem. <br>Minha missão é clara: conectar negócios e pessoas por meio de experiências visuais e digitais que inspiram, vendem e permanecem.</p>
+  </section>
+
+  <section id="ebook" class="beneficios">
+    <nav class="navDescritiva" id="navMissao">
+      <i class="bi bi-flag"></i>
+      <h2>Minha missão</h2>
+      <h4>Dar forma às ideias <br> Transformar códigos em conexão</h4>
+      <p class="dizeres">Ajudar pessoas e marcas. <br> A se expressarem com autenticidade. <br> Através do design inteligente e do desenvolvimento estratégico. <br> Criando experiências digitais que encantam, comunicam e convertem.</p>
+
+    </nav>
+    <nav class="navDescritiva" id="navMissao">
+      <i class="bi bi-eye"></i>
+      <h2>Minha visão</h2>
+      <h4>Ser lembrado não apenas pelo design <br> Mas pelo impacto</h4>
+      <p class="dizeres">Acredito que o futuro da criatividade está na união entre estética e propósito. <br> Onde cada layout. <br> Cada linha de código. <br> E cada interação geram valor real. <br> confiança e transformação duradoura.</p>
+
+    </nav>
+    <nav class="navDescritiva" id="navMissao">
+      <i class="bi bi-gem"></i>
+      <h2>Meus valores</h2>
+      <h4>Meus princípios são o código-fonte <br> Da minha entrega"</h4>
+      <p class="dizeres">Inspiração com propósito. <br>Precisão em cada detalhe. <br>Empatia em cada projeto. <br>Transparência que gera confiança.  <br>Inovação que move resultados.</p>
+
+    </nav>
+  </section>
+
+  <footer id="contato">
+    <p>&copy; 2024 Pascoal Da Silva. Todos os direitos reservados. Política de privacidade</p>
+    
+  </footer>
+
+  <a href="https://wa.me/5588999999999" class="floating-whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i> Fale comigo
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.from("header", {duration: 1, y: -100, opacity: 0});
+    gsap.from(".left img", {duration: 1, x: -100, opacity: 0, scrollTrigger: ".left img"});
+    gsap.from(".right", {duration: 1, x: 100, opacity: 0, scrollTrigger: ".right"});
+    gsap.from(".beneficios li", {duration: 0.6, y: 20, opacity: 0, stagger: 0.2, scrollTrigger: ".beneficios"});
+  </script>
+
+</body>
+</html>
